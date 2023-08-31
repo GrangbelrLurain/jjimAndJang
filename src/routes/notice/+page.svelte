@@ -1,0 +1,25 @@
+<script>
+  import FigureImage from '$lib/components/FigureImage.svelte';
+  import informationImage from '$lib/images/infomation.jpg';
+  import { notice } from '$lib/info';
+  import Notice from '$lib/components/Notice.svelte';
+</script>
+
+<article>
+  <FigureImage
+    src={informationImage}
+    alt=""
+    className="h-[24rem]"
+    titleText="NOTICE"
+    titleDiscription="공지사항 게시판"
+  />
+  <div class="flex justify-center">
+    <a href="/notice" class="btn rounded-none w-full px-20 flex-shrink btn-primary">공지사항</a>
+    <a href="/connect" class="btn rounded-none w-full px-20 flex-shrink">문의하기</a>
+  </div>
+  <div class="max-w-screen-lg mx-auto flex flex-col gap-5 py-10">
+    {#each notice as { detail, title }}
+      <Notice {title} {detail} />
+    {/each}
+  </div>
+</article>

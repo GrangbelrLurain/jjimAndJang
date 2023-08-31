@@ -1,0 +1,133 @@
+@font-face {
+  font-family: 'Pretendard Variable';
+  font-weight: 45 920;
+  font-style: normal;
+  font-display: swap;
+  src: local('Pretendard Variable'),
+    url('PretendardVariable.woff2') format('woff2-variations');
+}
+
+@font-face {
+  font-family: 'Pretendard';
+  font-weight: 200;
+  font-display: swap;
+  src: url('Pretendard-ExtraLight.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Pretendard';
+  font-weight: 400;
+  font-display: swap;
+  src: url('Pretendard-Regular.woff2') format('woff2');
+  src: url('Pretendard-Regular.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Pretendard';
+  font-weight: 500;
+  font-display: swap;
+  src: url('Pretendard-Medium.woff2') format('woff2');
+  src: url('Pretendard-Medium.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Pretendard';
+  font-weight: 600;
+  font-display: swap;
+  src: url('Pretendard-SemiBold.woff2') format('woff2');
+  src: url('Pretendard-SemiBold.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Pretendard';
+  font-weight: 700;
+  font-display: swap;
+  src: url('Pretendard-Bold.woff2') format('woff2');
+  src: url('Pretendard-Bold.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Pretendard';
+  font-weight: 800;
+  font-display: swap;
+  src: url('Pretendard-ExtraBold.woff2') format('woff2');
+  src: url('Pretendard-ExtraBold.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Pretendard';
+  font-weight: 900;
+  font-display: swap;
+  src: url('Pretendard-Black.woff2') format('woff2');
+  src: url('Pretendard-Black.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'tmoney-round-wind';
+  font-weight: 500;
+  font-display: swap;
+  src: url('TmoneyRoundWindRegular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'tmoney-round-wind';
+  font-weight: 700;
+  font-display: swap;
+  src: url('TmoneyRoundWindExtraBold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'noto-sans-kr';
+  font-weight: 900;
+  font-display: swap;
+  src: url('NotoSansKR-Black.otf') format('truetype');
+}
+
+@font-face {
+  font-family: 'noto-sans-kr';
+  font-weight: 800;
+  font-display: swap;
+  src: url('NotoSansKR-Bold.otf') format('truetype');
+}
+
+@font-face {
+  font-family: 'noto-sans-kr';
+  font-weight: 600;
+  font-display: swap;
+  src: url('NotoSansKR-Medium.otf') format('truetype');
+}
+
+@font-face {
+  font-family: 'noto-sans-kr';
+  font-weight: 500;
+  font-display: swap;
+  src: url('NotoSansKR-Regular.otf') format('truetype');
+}
+
+@font-face {
+  font-family: 'noto-sans-kr';
+  font-weight: 300;
+  font-display: swap;
+  src: url('NotoSansKR-Light.otf') format('truetype');
+}
+
+@font-face {
+  font-family: 'noto-sans-kr';
+  font-weight: 100;
+  font-display: swap;
+  src: url('NotoSansKR-Thin.otf') format('truetype');
+}
+
+@font-face {
+  font-family: 'franklin_gothic_demi_italic';
+  font-weight: 500;
+  font-dispay: swap;
+  src: url('Franklin_Gothic_Demi_Italic.ttf') format('truetype');
+}
+
+html {
+  font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto,
+    'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR',
+    'Malgun Gothic', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol',
+    sans-serif;
+}
