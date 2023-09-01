@@ -1,14 +1,54 @@
-import companyLogo from './images/logo.jpg';
-import heroImage from './images/hero.jpg';
 import { DateTime } from 'luxon';
+
+import heroImage from './images/hero.jpg';
+import companyLogo from './images/logo.jpg';
 
 type TRoute = {
   title: string;
   route: string;
 };
 
+type TFlooting = (
+  | {
+    title: string;
+  }
+  | { icon: string }
+) & {
+  route: string;
+};
+
+export type TBoundType = 'instagram' | 'facebook' | 'kakao';
+type TOutbound = {
+  type: TBoundType;
+  href: string;
+};
+
+type TPopup = {
+  href: string;
+  url: string;
+  startDate?: Date;
+  endDate?: Date;
+};
+
+type THero = {
+  title: string;
+  description: string;
+  buttonValue?: string;
+  buttonHref?: string;
+  backgroundImage?: string;
+};
+
+/* 회사 정보 * */
+export const companyInfo = {
+  address: '서울특별시 서초구 서초동 1322-1',
+  roadAddress: '서초대로70길 15',
+  kakaoMap: 'https://kko.to/6j_Ktm56jg',
+  email: 'lurain003@gmail.com',
+};
+
 export const logo = companyLogo;
 
+/* 페이지 정보 * */
 export const routes: TRoute[] = [
   { title: '회사소개', route: '/#company' },
   { title: '사업영역', route: '/#buisiness' },
@@ -16,25 +56,10 @@ export const routes: TRoute[] = [
   { title: '문의하기', route: '/connect' },
 ];
 
-type TFlooting = (
-  | {
-      title: string;
-    }
-  | { icon: string }
-) & {
-  route: string;
-};
-
 export const flooting: TFlooting[] = [
   { title: '블로그', route: 'https://www.naver.com/' },
   { title: '문의하기', route: '/connect' },
 ];
-
-export type TBoundType = 'instagram' | 'facebook' | 'kakao';
-type TOutbound = {
-  type: TBoundType;
-  href: string;
-};
 
 export const outbound: TOutbound[] = [
   {
@@ -51,22 +76,10 @@ export const outbound: TOutbound[] = [
   },
 ];
 
-type TPopup = {
-  href: string;
-  url: string;
-  startDate?: Date;
-  endDate?: Date;
-};
-
-export const popup: TPopup[] = [{ href: 'https://www.naver.com/', url: heroImage, startDate: DateTime.fromISO('2023-08-10').toJSDate() }];
-
-type THero = {
-  title: string;
-  description: string;
-  buttonValue?: string;
-  buttonHref?: string;
-  backgroundImage?: string;
-};
+/* 메인 페이지 정보 * */
+export const popup: TPopup[] = [
+  { href: 'https://www.naver.com/', url: heroImage, startDate: DateTime.fromISO('2023-08-10').toJSDate() },
+];
 
 export const hero: THero = {
   title: '고객과 함께 성장하는 기업',
@@ -75,16 +88,12 @@ export const hero: THero = {
   buttonHref: '/connect',
 };
 
-export const companyInfo = {
-  address: '서울특별시 서초구 서초동 1322-1',
-  roadAddress: '서초대로70길 15',
-  kakaoMap: 'https://kko.to/6j_Ktm56jg',
-};
-
+/* 게시물 페이지 정보 * */
 export const notice = [
   {
     title: '적립금은 언제까지 사용 가능한가요?',
-    detail: `적립금은 적립일로부터 1년간 사용하실 수 있으며 1,000원 이상부터 현금처럼 사용 가능하십니다. 적립금 소멸 7일전 별도 연락을 통해 안내 드릴예정입니다.`,
+    detail:
+      '적립금은 적립일로부터 1년간 사용하실 수 있으며 1,000원 이상부터 현금처럼 사용 가능하십니다. 적립금 소멸 7일전 별도 연락을 통해 안내 드릴예정입니다.',
   },
   {
     title: '제품을 환불하고 싶습니다. 가능한가요?',

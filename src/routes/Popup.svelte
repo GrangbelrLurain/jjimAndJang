@@ -31,8 +31,8 @@
   >
     <form class="w-full h-full relative flex items-center justify-center" method="dialog">
       <button class="w-full h-full absolute" />
-      <a {href} class='max-w-[1000px] max-h-[1000px] relative z-10' target='_blank'>
-        <img class='object-cover' src={url} alt="팝업 이미지입니다." />
+      <a {href} class="max-w-[1000px] max-h-[1000px] relative z-10" target="_blank">
+        <img class="object-cover" src={url} alt="팝업 이미지입니다." />
       </a>
     </form>
   </dialog>

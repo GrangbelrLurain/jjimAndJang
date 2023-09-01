@@ -11,8 +11,10 @@
       target="_blank"
       class={`aspect-square w-20 text-white font-bold flex items-center justify-center ${
         bgColors[index % bgColors.length]
-      }`}>{'title' in floot && floot.title}</a
+      }`}
     >
+      {'title' in floot && floot.title}
+    </a>
   {/each}
   <button
     class="bg-black aspect-square w-20 text-white font-bold"

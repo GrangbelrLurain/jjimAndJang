@@ -1,7 +1,37 @@
-<script>
+<script lang="ts">
   import FigureImage from '$lib/components/FigureImage.svelte';
   import KakaoMap from '$lib/components/KakaoMap.svelte';
   import informationImage from '$lib/images/infomation.jpg';
+  import { companyInfo } from '$lib/info';
+  import toast from '$lib/toast';
+
+  type TSubmitEvent = SubmitEvent & {
+    currentTarget: EventTarget & HTMLFormElement;
+  };
+  const handleSubmit = (event: TSubmitEvent) => {
+    event.preventDefault();
+    if (event.currentTarget) {
+      const formData = new FormData(event.currentTarget);
+
+      const name = formData.get('name');
+      const agree = formData.get('agree');
+      const contact = formData.get('contact');
+      const detail = formData.get('detail') as string;
+
+      if (agree !== 'on') {
+        toast('개인정보 수집에 동의해주세요.');
+        return;
+      }
+      const mail = document.createElement('a');
+
+      const n = ' %0D%0A';
+      const convertDetail = detail.split('\n').join(n);
+
+      console.log(convertDetail);
+      mail.href = `mailto:${companyInfo.email}?subject=${name}님의 문의입니다.&body=${convertDetail}${n}${n}연락처: ${contact}`;
+      mail.click();
+    }
+  };
 </script>
 
 <article class="flex flex-col gap-20 pb-20">
@@ -12,7 +42,7 @@
       <a href="/connect" class="btn rounded-none w-full px-20 flex-shrink btn-primary">문의하기</a>
     </div>
   </div>
-  <div class="max-w-screen-lg mx-auto flex flex-col gap-2">
+  <div class="max-w-3xl mx-auto flex flex-col gap-2 p-10 border">
     <p class="font-bold max-w-full w-screen">찾아오시는 길</p>
     <div class="flex items-center flex-col">
       <KakaoMap
@@ -27,7 +57,7 @@
     </div>
   </div>
   <div>
-    <form class="border max-w-screen-md mx-auto p-10 flex flex-col gap-5">
+    <form class="border max-w-screen-md mx-auto p-10 flex flex-col gap-5" on:submit={handleSubmit} method="POST">
       <p class="font-bold">개인정보 수집관련 동의사항</p>
       <p class="border whitespace-pre-line p-5 text-sm">
         {`○ 개인정보 수집/이용 목적 : 상담에 대한 다양한 정보 제공
@@ -38,23 +68,25 @@
 -보존기간은 5년이며, 정보 제공자가 삭제를 요청할 경우 즉시 파기합니다.
 -고객님의 정보는 개인정보 보호법에 따라 보호되며 위의 이용목적 외에 별도로 사용하지 않을 것을 약속드립니다.`}
       </p>
-      <label class="flex items-center gap-2 text-sm">
-        <input type="checkbox" />
+      <label class="flex items-center gap-2 text-sm" id="agree">
+        <input name="agree" type="checkbox" />
         <span>개인정보 취급방침을 읽었으며 이에 동의합니다.(필수)</span>
       </label>
       <p class="font-bold">문의 내용</p>
-      <label class="flex"
-        ><span class="w-20">성함</span><input class="join-item input input-bordered input-sm w-full" /></label
-      >
-      <label class="flex"
-        ><span class="w-20">연락처</span><input class="join-item input input-bordered input-sm w-full" /></label
-      >
+      <label class="flex">
+        <span class="w-20">성함</span>
+        <input name="name" class="join-item input input-bordered input-sm w-full" />
+      </label>
+      <label class="flex">
+        <span class="w-20">연락처</span>
+        <input name="contact" class="join-item input input-bordered input-sm w-full" />
+      </label>
       <label class="flex">
         <span class="w-20">문의내용</span>
 
-        <textarea class="join-item textarea textarea-bordered w-full" /></label
+        <textarea name="detail" class="join-item textarea textarea-bordered w-full" /></label
       >
-      <button class="btn btn-primary">문의하기</button>
+      <button class="btn btn-primary" type="submit">문의하기</button>
     </form>
   </div>
 </article>
