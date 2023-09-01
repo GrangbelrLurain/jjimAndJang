@@ -12,7 +12,7 @@
 			<img class='min-w-full min-h-full' {src} {alt} />
 		</figure>
         {/if}
-		<h4 class="uppercase font-extrabold text-2xl">{title || ''}</h4>
+		<h4 class="uppercase font-extrabold md:text-2xl text-xl">{title || ''}</h4>
 		<p class="whitespace-pre-line">
 			{discription}
 		</p>

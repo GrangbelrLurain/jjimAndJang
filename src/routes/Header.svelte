@@ -18,7 +18,7 @@
       <a href="/">{logo}</a>
     {/if}
     {#each routes as { title, route }}
-      <a class="link link-hover text-lg font-bold text-primary" href={route}>{title}</a>
+      <a class="link link-hover text-lg font-bold text-primary sm:block hidden" href={route}>{title}</a>
     {/each}
   </div>
   <div class="navbar-end" />

@@ -14,10 +14,10 @@
     titleDiscription="공지사항 게시판"
   />
   <div class="flex justify-center">
-    <a href="/notice" class="btn rounded-none w-full px-20 flex-shrink btn-primary">공지사항</a>
-    <a href="/connect" class="btn rounded-none w-full px-20 flex-shrink">문의하기</a>
+    <a href="/notice" class="btn rounded-none w-full flex-shrink btn-primary">공지사항</a>
+    <a href="/connect" class="btn rounded-none w-full flex-shrink">문의하기</a>
   </div>
-  <div class="max-w-screen-lg mx-auto flex flex-col gap-5 py-10">
+  <div class="max-w-screen-lg mx-auto flex flex-col gap-5 py-10 px-5">
     {#each notice as { detail, title }}
       <Notice {title} {detail} />
     {/each}

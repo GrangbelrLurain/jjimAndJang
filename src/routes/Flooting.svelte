@@ -9,7 +9,7 @@
     <a
       href={floot.route}
       target="_blank"
-      class={`aspect-square w-20 text-white font-bold flex items-center justify-center ${
+      class={`aspect-square sm:w-20 w-16 sm:text-base text-xs text-white font-bold flex items-center justify-center ${
         bgColors[index % bgColors.length]
       }`}
     >
@@ -17,7 +17,7 @@
     </a>
   {/each}
   <button
-    class="bg-black aspect-square w-20 text-white font-bold"
+    class="bg-black aspect-square sm:w-20 w-16 sm:text-base text-xs text-white font-bold"
     on:click={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>TOP</button
   >
 </div>

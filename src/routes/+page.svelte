@@ -12,17 +12,17 @@
 
 <section class="flex flex-col items-center">
   <Hero />
-  <article class="flex flex-col py-40 gap-5 text-center" id="company">
-    <h2 class="text-4xl font-extrabold uppercase text-primary">best value is best customers</h2>
+  <article class="flex flex-col py-40 gap-5 text-center px-5" id="company">
+    <h2 class="md:text-4xl sm:text-3xl text-2xl font-extrabold uppercase text-primary">best value is best customers</h2>
     <p class="whitespace-pre-line">
       {`저희 회사는 지난 2010년 시작으로 IT 제품들을 판매하며, 연 평균 3,000명 이상의 고객들에게
 			특별한 경험을 전달하며 업계를 선도하는 기업으로 성장해 오고 있습니다.`}
     </p>
   </article>
-  <article class="flex flex-col py-40 gap-5 text-center bg-base-200 w-full" id="buisiness">
-    <h3 class="text-3xl font-extrabold uppercase text-primary">buisiness</h3>
+  <article class="flex flex-col py-40 md:gap-5 gap-2 text-center bg-base-200 w-full" id="buisiness">
+    <h3 class="md:text-3xl sm:text-2xl text-xl font-extrabold uppercase text-primary">buisiness</h3>
     <p>개발부터 배포까지 통합 솔루션을 제공합니다.</p>
-    <div class="flex gap-5 justify-center">
+    <div class="flex gap-5 justify-center items-center lg:flex-row flex-col px-5">
       <Card
         src={developImg}
         title="develop"

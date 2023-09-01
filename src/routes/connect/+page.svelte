@@ -38,26 +38,26 @@
   <div>
     <FigureImage src={informationImage} alt="" className="h-[24rem]" titleText="CONNECT" titleDiscription="문의하기" />
     <div class="flex justify-center">
-      <a href="/notice" class="btn rounded-none w-full px-20 flex-shrink">공지사항</a>
-      <a href="/connect" class="btn rounded-none w-full px-20 flex-shrink btn-primary">문의하기</a>
+      <a href="/notice" class="btn rounded-none w-full flex-shrink">공지사항</a>
+      <a href="/connect" class="btn rounded-none w-full flex-shrink btn-primary">문의하기</a>
     </div>
   </div>
-  <div class="max-w-3xl mx-auto flex flex-col gap-2 p-10 border">
-    <p class="font-bold max-w-full w-screen">찾아오시는 길</p>
+  <div class="max-w-3xl w-full mx-auto flex flex-col gap-2 md:p-10 p-5 border">
+    <p class="font-bold w-full">찾아오시는 길</p>
     <div class="flex items-center flex-col">
       <KakaoMap
         lander={{
           timestamp: '1693459776577',
           key: '2g2gg',
           mapHeight: 'full',
-          mapWidth: '480',
+          mapWidth: '100',
         }}
         className="min-w-full max-w-full"
       />
     </div>
   </div>
   <div>
-    <form class="border max-w-screen-md mx-auto p-10 flex flex-col gap-5" on:submit={handleSubmit} method="POST">
+    <form class="border max-w-screen-md mx-auto md:p-10 p-5 flex flex-col gap-5" on:submit={handleSubmit} method="POST">
       <p class="font-bold">개인정보 수집관련 동의사항</p>
       <p class="border whitespace-pre-line p-5 text-sm">
         {`○ 개인정보 수집/이용 목적 : 상담에 대한 다양한 정보 제공

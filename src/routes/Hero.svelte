@@ -8,10 +8,15 @@
   </div>
   <div class="hero-content text-center">
     <div class="max-w-lg py-60">
-      <h1 class="text-5xl font-bold">{hero.title}</h1>
-      <p class="mt-2">{hero.description}</p>
-      <a href={hero.buttonHref} class="btn btn-outline btn-primary mt-5 uppercase">{hero.buttonValue || 'contact us'}</a
-      >
+      <h1 class="md:text-5xl sm:text-4xl text-3xl font-bold">
+        {hero.title}
+      </h1>
+      <p class="mt-2">
+        {hero.description}
+      </p>
+      <a href={hero.buttonHref} class="btn btn-outline btn-primary mt-5 uppercase touch:btn-active">
+        {hero.buttonValue || 'contact us'}
+      </a>
     </div>
   </div>
 </article>
