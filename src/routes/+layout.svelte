@@ -7,6 +7,17 @@
   import Popup from './Popup.svelte';
   import Aside from './Aside.svelte';
   import Toast from './Toast.svelte';
+  import AOS from 'aos';
+  import 'aos/dist/aos.css';
+  import { onMount } from 'svelte';
+
+  onMount(() => {
+    if (typeof document !== 'undefined') {
+      AOS.init({
+        duration: 500,
+      });
+    }
+  });
 </script>
 
 <div class="drawer">

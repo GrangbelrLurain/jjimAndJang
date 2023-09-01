@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
-	import kakaoMap from '../kakaoMap';
+	import kakaoMap from '../kakao-map';
 
     /**
     지도 가져오기 기능을 최대한 간단하게 구현하기 위해 컴포넌트로 구현하였습니다.

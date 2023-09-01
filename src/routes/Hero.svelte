@@ -14,7 +14,10 @@
       <p class="mt-2">
         {hero.description}
       </p>
-      <a href={hero.buttonHref} class="btn btn-outline btn-primary mt-5 uppercase touch:btn-active">
+      <a
+        href={hero.buttonHref}
+        class="btn btn-outline btn-primary mt-5 uppercase touch:btn-active"
+      >
         {hero.buttonValue || 'contact us'}
       </a>
     </div>

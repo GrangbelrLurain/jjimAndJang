@@ -44,6 +44,21 @@ export default {
         stylus: { raw: '(hover: none) and (pointer: fine)' },
         mouse: { raw: '(hover: hover) and (pointer: fine)' },
       },
+      keyframes: {
+        fadeInDown: {
+          from: {
+            opacity: 0,
+            transform: 'translate3d(0, -100%, 0)',
+          },
+          to: {
+            opacity: 1,
+            transform: 'translate3d(0, 0, 0)',
+          },
+        },
+      },
+      animation: {
+        fadeInDown: 'fadeInDown 2s ease-out backwards',
+      },
     },
   },
   plugins: [daisyui],

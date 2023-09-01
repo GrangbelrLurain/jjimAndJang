@@ -1,5 +1,5 @@
 <script>
-  import IconOutbound from '$lib/components/Icon-outbound.svelte';
+  import IconOutbound from '$lib/components/IconOutbound.svelte';
   import { logo, routes, outbound } from '$lib/info';
 </script>
 
@@ -11,7 +11,7 @@
     </div>
     {#each routes as { title, route }}
       <li>
-        <a class="link link-hover text-lg font-bold text-primary" href={route}>{title}</a>
+        <a class="text-lg font-bold text-primary" href={route}>{title}</a>
       </li>
     {/each}
     {#if outbound.length}

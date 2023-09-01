@@ -1,5 +1,5 @@
 <script>
-  import IconOutbound from '$lib/components/Icon-outbound.svelte';
+  import IconOutbound from '$lib/components/IconOutbound.svelte';
   import { companyInfo, logo, routes, outbound } from '$lib/info';
 </script>
 
