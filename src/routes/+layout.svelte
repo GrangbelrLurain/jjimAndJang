@@ -4,7 +4,6 @@
   import '../font/font.css';
   import Footer from './Footer.svelte';
   import Flooting from './Flooting.svelte';
-  import Popup from './Popup.svelte';
   import Aside from './Aside.svelte';
   import Toast from './Toast.svelte';
   import AOS from 'aos';
@@ -23,9 +22,8 @@
 <div class="drawer">
   <input id="main-drawer" type="checkbox" class="drawer-toggle" />
   <Toast />
-  <Popup />
   <Flooting />
-  <main class="drawer-content">
+  <main class="drawer-content overflow-hidden">
     <Header />
     <slot />
     <Footer />

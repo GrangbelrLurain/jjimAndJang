@@ -14,7 +14,6 @@
 		"@fontsource/fira-mono": "^4.5.10",
 		"@neoconfetti/svelte": "^1.0.0",
 		"@sveltejs/adapter-auto": "^2.0.0",
-		"@sveltejs/kit": "^1.20.4",
 		"@types/cookie": "^0.5.1",
 		"@typescript-eslint/eslint-plugin": "^5.45.0",
 		"@typescript-eslint/parser": "^5.45.0",
@@ -36,11 +35,15 @@
 	},
 	"type": "module",
 	"dependencies": {
+		"@sveltejs/kit": "^1.20.4",
 		"@types/aos": "^3.0.4",
 		"@types/luxon": "^3.3.2",
 		"aos": "^2.3.4",
 		"daisyui": "^3.6.4",
+		"dotenv": "^16.3.1",
+		"form-data": "^4.0.0",
 		"luxon": "^3.4.2",
+		"mailgun.js": "^9.2.1",
 		"svelte": "^4.2.0",
 		"tailwindcss": "^3.3.3",
 		"tw-merge": "^0.0.1-alpha.3"

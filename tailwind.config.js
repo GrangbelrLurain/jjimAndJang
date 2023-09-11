@@ -7,15 +7,15 @@ export default {
     themes: [
       {
         defaultTheme: {
-          primary: '#1d4d7c',
+          primary: '#f22f1d',
           secondary: '#e08672',
           accent: '#b1f45f',
           neutral: '#251b27',
           'base-100': '#ffffff',
           info: '#869cdf',
-          success: '#0f5c2d',
+          success: '#1b2b8b',
           warning: '#fcc74a',
-          error: '#ef3948',
+          error: '#f22f1d',
         },
       },
     ],
