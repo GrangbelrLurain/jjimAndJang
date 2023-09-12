@@ -9,8 +9,8 @@ type TRoute = {
 
 type TFlooting = (
   | {
-      title: string;
-    }
+    title: string;
+  }
   | { icon: string }
 ) & {
   route: string;
@@ -70,3 +70,30 @@ export const hero: THero = {
   backgroundImage: bannerImg,
   buttonHref: '/connect',
 };
+
+export const comments = [
+  {
+    name: '김**',
+    text: '양이 어마어마해요\n맛있게 잘먹었습니다',
+  },
+  {
+    name: '권**',
+    text: '양많고 맛있어요^^',
+  },
+  {
+    name: '오**',
+    text: '맛있어요. 양도 푸짐하네요.',
+  },
+  {
+    name: '장**',
+    text: '맛있고!! 신선하고!!! 양많고!!!',
+  },
+  {
+    name: '이**',
+    text: '양이 엄청 푸짐하고 텁텁하지 않고 깔끔한 맛이에요.\n맛있게 잘 먹었습니다.',
+  },
+  {
+    name: '유**',
+    text: '정~말 맛있어요',
+  },
+];

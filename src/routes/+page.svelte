@@ -12,11 +12,27 @@
   import c6 from '$lib/images/pc06.jpg';
   import c7 from '$lib/images/pc07.jpg';
   import c8 from '$lib/images/pc08.jpg';
+  import review1 from '$lib/images/review1.jpg';
+  import review2 from '$lib/images/review2.jpg';
+  import review3 from '$lib/images/review3.jpg';
+  import review4 from '$lib/images/review4.jpg';
+  import review5 from '$lib/images/review5.jpg';
+  import review6 from '$lib/images/review6.jpg';
+  import review8 from '$lib/images/review8.jpg';
+  import review9 from '$lib/images/review9.jpg';
+  import review10 from '$lib/images/review10.jpg';
+  import review11 from '$lib/images/review11.jpg';
+  import review12 from '$lib/images/review12.jpg';
+  import review13 from '$lib/images/review13.jpg';
+  import review14 from '$lib/images/review14.jpg';
   import haccp from '$lib/images/HACCP_logo.png';
+  import onion from '$lib/images/onion.png';
   import Connect from '$lib/components/Connect.svelte';
+  import FigureImage from '$lib/components/FigureImage.svelte';
+  import { comments } from '$lib/info';
+  import Review from '$lib/components/Review.svelte';
 
   const images = [c1, c2, c3, c4, c5, c6, c7, c8];
-
 </script>
 
 <svelte:head>
@@ -26,6 +42,17 @@
 
 <section class="flex flex-col items-center">
   <Hero />
+  <article data-aos="fade-down" class="py-28 flex md:flex-row flex-col items-center gap-10 w-full  max-w-[50rem]">
+    <div class="h-[20rem] w-full mx-auto flex items-center justify-center">
+      <div class="animate-bounce h-[5rem] w-full flex items-center justify-center">
+        <FigureImage src={onion} alt={'국내산 양파'} className="w-full max-w-[27rem] max-h-[20rem] aspect-[27/20]" />
+      </div>
+    </div>
+    <div class="text-center w-full">
+      <p class="text-3xl font-extrabold animate-pulse text-primary">국내산 양파로 면역력 업!</p>
+      <p class="text-2xl">맛과 건강을 한 번에 챙기세요!</p>
+    </div>
+  </article>
   <article
     class="flex flex-col text-center relative overflow-hidden w-full h-[40rem] items-center justify-center px-5"
     id="company"
@@ -60,6 +87,26 @@
         type="right"
       />
       <Card src={menu3} title="아구찜" discription={`푸-짐한 양에 매-콤한 맛,\n역대급 아구찜!`} />
+    </div>
+  </article>
+  <article class="flex flex-col gap-10 pt-40 w-full max-w-4xl">
+    <div>
+      <h3 class="text-center md:text-3xl sm:text-2xl text-xl font-extrabold uppercase text-primary">쿠팡이츠</h3>
+      <p class="text-center text-xl text-gray-500">리뷰 {Number(2500).toLocaleString()}+</p>
+    </div>
+    <div class="flex flex-col md:flex-row w-[80rem] max-w-full gap-10 px-10">
+      <div class="flex-shrink md:w-1/2 flex flex-col gap-5">
+        <Review aos="fade-right" image={review1} />
+        <Review aos="fade-right" image={review4} />
+        <Review aos="fade-right" image={review5} />
+        <Review aos="fade-right" image={review8} />
+      </div>
+      <div class="flex-shrink md:w-1/2 flex flex-col gap-5 justify-between">
+        <Review aos="fade-left" image={review2} />
+        <Review aos="fade-left" image={review3} />
+        <Review aos="fade-left" image={review6} />
+        <Review aos="fade-left" image={review10} />
+      </div>
     </div>
   </article>
   <Connect />

@@ -34,7 +34,7 @@
   export let className = '';
 </script>
 
-<article class={`flex flex-col gap-20 py-20 ${className}`} id="contect">
+<article class={`flex flex-col gap-20 py-40 ${className}`} id="contect">
   <div class="max-w-3xl w-full mx-auto flex flex-col gap-2 md:p-10 p-5 border">
     <p data-aos="fade-down" class="font-bold w-full">찾아오시는 길</p>
     <div data-aos="fade-down" class="flex items-center flex-col">
