@@ -19,12 +19,8 @@
   import review5 from '$lib/images/review5.jpg';
   import review6 from '$lib/images/review6.jpg';
   import review8 from '$lib/images/review8.jpg';
-  import review9 from '$lib/images/review9.jpg';
   import review10 from '$lib/images/review10.jpg';
-  import review11 from '$lib/images/review11.jpg';
-  import review12 from '$lib/images/review12.jpg';
-  import review13 from '$lib/images/review13.jpg';
-  import review14 from '$lib/images/review14.jpg';
+  import fiveMinute from '$lib/images/5minute.gif';
   import haccp from '$lib/images/HACCP_logo.png';
   import onion from '$lib/images/onion.png';
   import Connect from '$lib/components/Connect.svelte';
@@ -42,15 +38,20 @@
 
 <section class="flex flex-col items-center">
   <Hero />
-  <article data-aos="fade-down" class="py-28 flex md:flex-row flex-col items-center gap-10 w-full  max-w-[50rem]">
-    <div class="h-[20rem] w-full mx-auto flex items-center justify-center">
-      <div class="animate-bounce h-[5rem] w-full flex items-center justify-center">
-        <FigureImage src={onion} alt={'국내산 양파'} className="w-full max-w-[27rem] max-h-[20rem] aspect-[27/20]" />
+  <article data-aos="fade-down" class="py-28 w-full flex flex-col gap-10 max-w-[50rem]">
+    <h3 class="md:text-3xl sm:text-2xl text-xl font-extrabold uppercase text-primary text-center">
+      healthy food
+    </h3>
+    <div class="flex md:flex-row flex-col items-center gap-10">
+      <div class="h-[20rem] w-full mx-auto flex items-center justify-center">
+        <div class="animate-bounce h-[5rem] w-full flex items-center justify-center">
+          <FigureImage src={onion} alt={'국내산 양파'} className="w-full max-w-[27rem] max-h-[20rem] aspect-[27/20]" />
+        </div>
       </div>
-    </div>
-    <div class="text-center w-full">
-      <p class="text-3xl font-extrabold animate-pulse text-primary">국내산 양파로 면역력 업!</p>
-      <p class="text-2xl">맛과 건강을 한 번에 챙기세요!</p>
+      <div class="text-center w-full">
+        <p class="text-3xl font-extrabold animate-pulse text-primary">국내산 양파로 면역력 업!</p>
+        <p class="text-2xl">맛과 건강을 한 번에 챙기세요!</p>
+      </div>
     </div>
   </article>
   <article
@@ -73,10 +74,8 @@
       </p>
     </div>
   </article>
-  <article class="flex flex-col py-40 md:gap-5 gap-2 text-center bg-base-200 w-full" id="menus">
-    <h3 data-aos="fade-down" class="md:text-3xl sm:text-2xl text-xl font-extrabold uppercase text-primary">
-      메뉴 소개
-    </h3>
+  <article class="flex flex-col py-40 md:gap-5 gap-2 text-center w-full" id="menus">
+    <h3 data-aos="fade-down" class="md:text-3xl sm:text-2xl text-xl font-extrabold uppercase text-primary">menus</h3>
     <p data-aos="fade-down">찜앤장은 항상 특별한 맛을 제공합니다.</p>
     <div class="flex gap-5 justify-center items-center flex-col px-5">
       <Card src={menu1} title="해물찜" discription={`해물찜의 새로운 기준!\n맛과 양, 신선함까지 챙겼습니다.`} />
@@ -89,10 +88,21 @@
       <Card src={menu3} title="아구찜" discription={`푸-짐한 양에 매-콤한 맛,\n역대급 아구찜!`} />
     </div>
   </article>
+  <article class="flex flex-col gap-5 py-20 bg-base-200 w-full relative">
+    <h3 class="text-center md:text-3xl sm:text-2xl text-xl font-extrabold uppercase text-primary relative z-10">
+      easy cooking
+    </h3>
+    <div class="flex items-center gap-5 mx-auto relative z-10 md:flex-row flex-col">
+      <img data-aos="fade-right" src={fiveMinute} alt="5분" class="w-80" />
+      <p class="font-extrabold text-4xl animate-bounce">조리까지 단 <span class="text-primary">5분</span></p>
+    </div>
+  </article>
   <article class="flex flex-col gap-10 pt-40 w-full max-w-4xl">
-    <div>
-      <h3 class="text-center md:text-3xl sm:text-2xl text-xl font-extrabold uppercase text-primary">쿠팡이츠</h3>
-      <p class="text-center text-xl text-gray-500">리뷰 {Number(2500).toLocaleString()}+</p>
+    <div class="flex flex-col gap-5">
+      <h3 class="text-center md:text-3xl sm:text-2xl text-xl font-extrabold uppercase text-primary">reviews</h3>
+      <p class="text-center text-xl text-gray-500">
+        쿠팡 이츠 리뷰 <span class="text-primary font-bold text-2xl">{Number(2500).toLocaleString()}+</span>
+      </p>
     </div>
     <div class="flex flex-col md:flex-row w-[80rem] max-w-full gap-10 px-10">
       <div class="flex-shrink md:w-1/2 flex flex-col gap-5">
