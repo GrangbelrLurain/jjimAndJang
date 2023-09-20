@@ -63,66 +63,66 @@
 }
 
 @font-face {
-  font-family: 'tmoney-round-wind';
-  font-weight: 500;
-  font-display: swap;
-  src: url('TmoneyRoundWindRegular.ttf') format('truetype');
-}
-
-@font-face {
-  font-family: 'tmoney-round-wind';
-  font-weight: 700;
-  font-display: swap;
-  src: url('TmoneyRoundWindExtraBold.ttf') format('truetype');
-}
-
-@font-face {
-  font-family: 'noto-sans-kr';
+  font-family: 'apple-SD-gothic-neo';
   font-weight: 900;
   font-display: swap;
-  src: url('NotoSansKR-Black.otf') format('truetype');
+  src: url('AppleSDGothicNeoH.ttf') format('truetype');
 }
 
 @font-face {
-  font-family: 'noto-sans-kr';
+  font-family: 'apple-SD-gothic-neo';
   font-weight: 800;
   font-display: swap;
-  src: url('NotoSansKR-Bold.otf') format('truetype');
+  src: url('AppleSDGothicNeoEB.ttf') format('truetype');
 }
 
 @font-face {
-  font-family: 'noto-sans-kr';
+  font-family: 'apple-SD-gothic-neo';
+  font-weight: 700;
+  font-display: swap;
+  src: url('AppleSDGothicNeoB.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'apple-SD-gothic-neo';
   font-weight: 600;
   font-display: swap;
-  src: url('NotoSansKR-Medium.otf') format('truetype');
+  src: url('AppleSDGothicNeoSB.ttf') format('truetype');
 }
 
 @font-face {
-  font-family: 'noto-sans-kr';
+  font-family: 'apple-SD-gothic-neo';
   font-weight: 500;
   font-display: swap;
-  src: url('NotoSansKR-Regular.otf') format('truetype');
+  src: url('AppleSDGothicNeoM.ttf') format('truetype');
 }
 
 @font-face {
-  font-family: 'noto-sans-kr';
+  font-family: 'apple-SD-gothic-neo';
+  font-weight: 400;
+  font-display: swap;
+  src: url('AppleSDGothicNeoR.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'apple-SD-gothic-neo';
   font-weight: 300;
   font-display: swap;
-  src: url('NotoSansKR-Light.otf') format('truetype');
+  src: url('AppleSDGothicNeoL.ttf') format('truetype');
 }
 
 @font-face {
-  font-family: 'noto-sans-kr';
+  font-family: 'apple-SD-gothic-neo';
+  font-weight: 200;
+  font-display: swap;
+  src: url('AppleSDGothicNeoUL.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'apple-SD-gothic-neo';
   font-weight: 100;
   font-display: swap;
-  src: url('NotoSansKR-Thin.otf') format('truetype');
-}
-
-@font-face {
-  font-family: 'franklin_gothic_demi_italic';
-  font-weight: 500;
-  font-dispay: swap;
-  src: url('Franklin_Gothic_Demi_Italic.ttf') format('truetype');
+  src: url('AppleSDGothicNeoT.ttf') format('truetype');
 }
 
 html {
