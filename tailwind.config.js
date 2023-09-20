@@ -7,7 +7,7 @@ export default {
     themes: [
       {
         defaultTheme: {
-          primary: '#f22f1d',
+          primary: '#9D1F24',
           secondary: '#e08672',
           accent: '#b1f45f',
           neutral: '#251b27',

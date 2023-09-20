@@ -9,7 +9,7 @@
         const targetElem = document.querySelector(`#${targetID}`);
         if (targetID && targetElem) {
           const bottom = targetElem.getBoundingClientRect().bottom;
-          const top = targetElem.getBoundingClientRect().top;
+          const top = targetElem.getBoundingClientRect().top - 40;
           if (0 < bottom && 0 >= top) {
             nowActive = route;
           }

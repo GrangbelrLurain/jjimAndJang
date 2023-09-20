@@ -1,6 +1,6 @@
 import { DateTime } from 'luxon';
 
-import bannerImg from './images/해물찜1.png';
+import bannerImg from './images/banner.png';
 
 type TRoute = {
   title: string;
@@ -54,8 +54,8 @@ export const logo = '';
 /* 페이지 정보 * */
 export const routes: TRoute[] = [
   { title: '찜앤장', route: '/#banner' },
-  { title: '가게소개', route: '/#company' },
   { title: '메뉴소개', route: '/#menus' },
+  { title: '가게소개', route: '/#company' },
   { title: '문의하기', route: '/#contect' },
 ];
 
@@ -65,8 +65,8 @@ export const outbound: TOutbound[] = [];
 
 /* 메인 페이지 정보 * */
 export const hero: THero = {
-  title: 'FRESH SEAFOOD',
-  description: '찜&장은 늘 맛있고 신선한 음식으로 보답합니다.',
+  title: 'SPECIAL RESTORANT',
+  description: '찜앤장은 특별한 양념장으로 독보적인 맛을 자랑합니다.\n수 많은 성공과 실패에서 비롯한 노하우\n해물찜 프렌차이즈로 0부터 Z까지 컨설팅 받아보세요.',
   backgroundImage: bannerImg,
   buttonHref: '/connect',
 };

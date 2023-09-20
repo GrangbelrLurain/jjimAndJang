@@ -12,36 +12,71 @@
   import c6 from '$lib/images/pc06.jpg';
   import c7 from '$lib/images/pc07.jpg';
   import c8 from '$lib/images/pc08.jpg';
-  import review1 from '$lib/images/review1.jpg';
-  import review2 from '$lib/images/review2.jpg';
-  import review3 from '$lib/images/review3.jpg';
-  import review4 from '$lib/images/review4.jpg';
-  import review5 from '$lib/images/review5.jpg';
-  import review6 from '$lib/images/review6.jpg';
-  import review8 from '$lib/images/review8.jpg';
-  import review10 from '$lib/images/review10.jpg';
-  import fiveMinute from '$lib/images/5minute.gif';
+  import review from '$lib/images/review.gif';
+  import fiveMinute from '$lib/images/5minute_white.gif';
+  import hall from '$lib/images/매장.gif';
+  import delevery from '$lib/images/배달.gif';
+  import threeDay from '$lib/images/숙성.gif';
   import haccp from '$lib/images/HACCP_logo.png';
   import onion from '$lib/images/onion.png';
   import Connect from '$lib/components/Connect.svelte';
   import FigureImage from '$lib/components/FigureImage.svelte';
-  import { comments } from '$lib/info';
-  import Review from '$lib/components/Review.svelte';
+  import IconCard from '$lib/components/IconCard.svelte';
 
   const images = [c1, c2, c3, c4, c5, c6, c7, c8];
 </script>
 
 <svelte:head>
   <title>찜앤장입니다.</title>
-  <meta name="description" content="안녕하세요 해물찜 전문점 찜앤장입니다." />
+  <meta
+    name="description"
+    content={`찜앤장은 특별한 양념장으로 독보적인 맛을 자랑합니다.\n수 많은 성공과 실패에서 비롯한 노하우로\n컨설팅해 드립니다.`}
+  />
 </svelte:head>
 
 <section class="flex flex-col items-center">
   <Hero />
-  <article data-aos="fade-down" class="py-28 w-full flex flex-col gap-10 max-w-[50rem]">
-    <h3 class="md:text-3xl sm:text-2xl text-xl font-extrabold uppercase text-primary text-center">
-      healthy food
+  <article class="py-40 w-full">
+    <h3 class="md:text-3xl sm:text-2xl text-xl font-extrabold uppercase text-center">프랜차이즈 찜앤장</h3>
+    <p class="whitespace-pre-line mx-auto max-w-md">
+      {`- 2인 운영 매장에 최적화된 운영시스템`}
+    </p>
+  </article>
+  <article>
+    <img src={threeDay} alt="" />
+  </article>
+  <article>
+    <img src={hall} alt="" />
+    <img src={delevery} alt="" />
+  </article>
+  <article class="flex flex-col gap-5 pb-40 w-full relative bg-primary">
+    <h3 class="text-center md:text-3xl sm:text-2xl text-xl font-extrabold uppercase text-white relative z-10">
+      easy cooking
     </h3>
+    <div class="flex items-center gap-5 mx-auto relative z-10 md:flex-row flex-col">
+      <img data-aos="flip-left" src={fiveMinute} alt="5분" class="w-80" />
+      <div>
+        <p class="font-extrabold text-4xl text-white animate-bounce">조리까지 단 <span class="text-white">5분</span></p>
+        <p class="text-white">누구나 조리 가능한 시스템으로 매장 자동화 가능</p>
+      </div>
+    </div>
+  </article>
+  <article class="flex flex-col py-40 md:gap-5 gap-2 text-center w-full" id="menus">
+    <h3 data-aos="fade-down" class="md:text-3xl sm:text-2xl text-xl font-extrabold uppercase text-primary">menus</h3>
+    <p data-aos="fade-down">찜앤장은 항상 특별한 맛을 제공합니다.</p>
+    <div class="flex gap-5 justify-center items-center px-5 w-full mx-auto flex-col flex-wrap sm:flex-row">
+      <Card src={menu1} title="해물찜" discription={`해물찜의 새로운 기준!\n맛과 양, 신선함까지 챙겼습니다.`} />
+      <Card
+        src={menu2}
+        title="알곤이찜"
+        discription={`탱탱한 곤이와 촉촉하고 부드러운 알!\n푸짐한 곤이찜을 만나보세요.`}
+        type="right"
+      />
+      <Card src={menu3} title="아구찜" discription={`푸-짐한 양에 매-콤한 맛,\n역대급 아구찜!`} />
+    </div>
+  </article>
+  <article data-aos="fade-down" class="py-28 w-full flex flex-col gap-10 max-w-[50rem]">
+    <h3 class="md:text-3xl sm:text-2xl text-xl font-extrabold uppercase text-primary text-center">healthy food</h3>
     <div class="flex md:flex-row flex-col items-center gap-10">
       <div class="h-[20rem] w-full mx-auto flex items-center justify-center">
         <div class="animate-bounce h-[5rem] w-full flex items-center justify-center">
@@ -49,8 +84,17 @@
         </div>
       </div>
       <div class="text-center w-full">
-        <p class="text-3xl font-extrabold animate-pulse text-primary">국내산 양파로 면역력 업!</p>
-        <p class="text-2xl">맛과 건강을 한 번에 챙기세요!</p>
+        <p class="text-3xl font-extrabold animate-pulse text-primary">국내산 마늘로 면역력 업!</p>
+        <p class="text-2xl whitespace-pre-line">{`3일 숙성양념소스로 맛은 물론,\n몸에 좋은 면역력강화 효과까지`}</p>
+      </div>
+    </div>
+  </article>
+  <article class="flex flex-col gap-10 pt-40 w-full">
+    <div class="flex flex-col gap-5">
+      <div class="bg-black py-10">
+        <div class="max-w-4xl w-full mx-auto">
+          <img src={review} alt="쿠팡 이츠 리뷰 2500개 달성" />
+        </div>
       </div>
     </div>
   </article>
@@ -74,49 +118,19 @@
       </p>
     </div>
   </article>
-  <article class="flex flex-col py-40 md:gap-5 gap-2 text-center w-full" id="menus">
-    <h3 data-aos="fade-down" class="md:text-3xl sm:text-2xl text-xl font-extrabold uppercase text-primary">menus</h3>
-    <p data-aos="fade-down">찜앤장은 항상 특별한 맛을 제공합니다.</p>
-    <div class="flex gap-5 justify-center items-center flex-col px-5">
-      <Card src={menu1} title="해물찜" discription={`해물찜의 새로운 기준!\n맛과 양, 신선함까지 챙겼습니다.`} />
-      <Card
-        src={menu2}
-        title="알곤이찜"
-        discription={`탱탱한 곤이와 촉촉하고 부드러운 알!\n푸짐한 곤이찜을 만나보세요.`}
-        type="right"
-      />
-      <Card src={menu3} title="아구찜" discription={`푸-짐한 양에 매-콤한 맛,\n역대급 아구찜!`} />
-    </div>
-  </article>
-  <article class="flex flex-col gap-5 py-20 bg-base-200 w-full relative">
-    <h3 class="text-center md:text-3xl sm:text-2xl text-xl font-extrabold uppercase text-primary relative z-10">
-      easy cooking
-    </h3>
-    <div class="flex items-center gap-5 mx-auto relative z-10 md:flex-row flex-col">
-      <img data-aos="fade-right" src={fiveMinute} alt="5분" class="w-80" />
-      <p class="font-extrabold text-4xl animate-bounce">조리까지 단 <span class="text-primary">5분</span></p>
-    </div>
-  </article>
-  <article class="flex flex-col gap-10 pt-40 w-full max-w-4xl">
-    <div class="flex flex-col gap-5">
-      <h3 class="text-center md:text-3xl sm:text-2xl text-xl font-extrabold uppercase text-primary">reviews</h3>
-      <p class="text-center text-xl text-gray-500">
-        쿠팡 이츠 리뷰 <span class="text-primary font-bold text-2xl">{Number(2500).toLocaleString()}+</span>
-      </p>
-    </div>
-    <div class="flex flex-col md:flex-row w-[80rem] max-w-full gap-10 px-10">
-      <div class="flex-shrink md:w-1/2 flex flex-col gap-5">
-        <Review aos="fade-right" image={review1} />
-        <Review aos="fade-right" image={review4} />
-        <Review aos="fade-right" image={review5} />
-        <Review aos="fade-right" image={review8} />
-      </div>
-      <div class="flex-shrink md:w-1/2 flex flex-col gap-5 justify-between">
-        <Review aos="fade-left" image={review2} />
-        <Review aos="fade-left" image={review3} />
-        <Review aos="fade-left" image={review6} />
-        <Review aos="fade-left" image={review10} />
-      </div>
+  <article class="pt-40 w-full flex flex-col gap-5 px-5">
+    <h3 class="text-center md:text-3xl sm:text-2xl text-xl font-extrabold uppercase text-primary">가맹계약</h3>
+    <div class="bg-base-300 h-20 w-[1px] mx-auto" />
+    <p class="text-center whitespace-pre text-lg">
+      {`별도의 기술없이 누구나 조리가 가능하기 때문에\n빠르게 창업 및 오픈 가능`}
+    </p>
+    <div class="grid md:grid-cols-2 grid-cols-1 max-w-5xl w-full mx-auto gap-5">
+      <IconCard icon="paper" title="STEP1" discription="가맹계약" />
+      <IconCard icon="zoom" title="STEP2" discription="상권 분석 및 점포물색" />
+      <IconCard icon="gear" title="STEP3" discription="인테리어 시공" />
+      <IconCard icon="flag" title="STEP4" discription="인허가" />
+      <IconCard icon="pencil" title="STEP5" discription="운영 교육" />
+      <IconCard icon="clock" title="STEP6" discription="초도 물량 입고 및 오픈" />
     </div>
   </article>
   <Connect />
