@@ -49,7 +49,7 @@
     <img src={hall} alt="" />
     <img src={delevery} alt="" />
   </article>
-  <article class="flex flex-col gap-5 pb-40 w-full relative bg-primary">
+  <article class="flex flex-col gap-5 py-40 w-full relative bg-primary">
     <h3 class="text-center md:text-3xl sm:text-2xl text-xl font-extrabold uppercase text-white relative z-10">
       easy cooking
     </h3>
