@@ -81,7 +81,7 @@
     </div>
   </article>
   <article class="flex flex-col py-40 md:gap-5 gap-2 text-center w-full" id="menus">
-    <h3 data-aos="fade-down" class="md:text-3xl sm:text-2xl text-xl font-extrabold uppercase text-primary">menus</h3>
+    <h3 data-aos="fade-down" class="md:text-3xl sm:text-2xl text-xl font-extrabold uppercase text-primary">menu</h3>
     <p data-aos="fade-down">찜앤장은 항상 특별한 맛을 제공합니다.</p>
     <div class="flex gap-5 justify-center items-center px-5 w-full mx-auto flex-col flex-wrap sm:flex-row">
       <Card src={menu1} title="해물찜" discription={`해물찜의 새로운 기준!\n맛과 양, 신선함까지 챙겼습니다.`} />

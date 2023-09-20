@@ -55,8 +55,8 @@ export const logo = '';
 export const routes: TRoute[] = [
   { title: '찜앤장', route: '/#banner' },
   { title: '메뉴소개', route: '/#menus' },
-  { title: '가게소개', route: '/#company' },
-  { title: '문의하기', route: '/#contect' },
+  { title: '창업소개', route: '/#company' },
+  { title: '가맹문의', route: '/#contect' },
 ];
 
 export const flooting: TFlooting[] = [{ title: '문의하기', route: '/#contect' }];
