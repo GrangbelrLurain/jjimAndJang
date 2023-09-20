@@ -67,7 +67,7 @@
             <input class="cursor-pointer" name="agree" type="checkbox" />
             <span>개인정보 취급방침을 읽었으며 이에 동의합니다.(필수)</span>
           </label>
-          <p data-aos="fade-down" class="font-bold">문의 내용</p>
+          <p data-aos="fade-down" class="font-bold">가맹문의</p>
           <label data-aos="fade-down" class="flex">
             <span class="w-20">이메일</span>
             <input name="email" class="join-item input input-bordered input-sm w-full" />
