@@ -100,8 +100,9 @@
       <figure class="aspect-square overflow-hidden">
         <img src={galic} alt={'국내산 마늘'} />
       </figure>
-      <div class="text-center w-full absolute md:bottom-40 bottom-0">
-        <p class="text-3xl font-extrabold animate-pulse text-primary">대량의 양파 마늘을 넣어 면역력 업!</p>
+      <div class="text-center w-full absolute md:bottom-20 bottom-0 flex flex-col gap-2">
+        <p class="text-4xl font-extrabold">양파와 마늘을 듬뿍 넣어</p>
+        <p class="text-5xl font-extrabold text-primary animate-pulse">면역력 업!</p>
       </div>
     </div>
   </article>
@@ -110,8 +111,8 @@
       <img src={threeDay} alt="" />
     </figure>
     <div class="text-2xl md:text-5xl text-center font-extrabold flex flex-col gap-2">
-      <p>3일 이상 <span class="text-primary">숙성 양념 소스</span>로 <span class="text-primary">맛</span>은 물론</p>
-      <p>몸에 좋은 <span class="text-primary">면역력 강화</span> 효과까지</p>
+      <p>3일 이상 <span class="text-primary">숙성 양념 소스</span>로</p>
+      <p><span class="text-primary">맛</span>은 물론 <span class="text-primary">영양</span>까지!</p>
     </div>
   </article>
   <article class="flex flex-col gap-10 pt-40 w-full">
