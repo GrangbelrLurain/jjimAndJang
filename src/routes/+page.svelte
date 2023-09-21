@@ -1,9 +1,9 @@
 <script>
   import Card from '../lib/components/Card.svelte';
   import Hero from './Hero.svelte';
-  import menu1 from '$lib/images/해물찜1.png';
+  import menu3 from '$lib/images/해물찜1.png';
   import menu2 from '$lib/images/해물찜2.png';
-  import menu3 from '$lib/images/해물찜3.png';
+  import menu1 from '$lib/images/해물찜3.png';
   import c1 from '$lib/images/01.jpg';
   import c2 from '$lib/images/pc02.jpg';
   import c3 from '$lib/images/pc03.jpg';
@@ -106,11 +106,11 @@
     </div>
   </article>
   <article class="flex flex-col gap-10 pb-40">
-    <figure class="aspect-[3/2] overflow-hidden max-w-xl">
+    <figure class="aspect-[3/2] overflow-hidden max-w-xl mx-auto">
       <img src={threeDay} alt="" />
     </figure>
     <div class="text-2xl md:text-5xl text-center font-extrabold flex flex-col gap-2">
-      <p>3일 <span class="text-primary">숙성 양념 소스</span>로 <span class="text-primary">맛</span>은 물론</p>
+      <p>3일 이상 <span class="text-primary">숙성 양념 소스</span>로 <span class="text-primary">맛</span>은 물론</p>
       <p>몸에 좋은 <span class="text-primary">면역력 강화</span> 효과까지</p>
     </div>
   </article>
