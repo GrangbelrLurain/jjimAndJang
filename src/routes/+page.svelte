@@ -101,7 +101,7 @@
         <img src={galic} alt={'국내산 마늘'} />
       </figure>
       <div class="text-center w-full absolute md:bottom-40 bottom-0">
-        <p class="text-3xl font-extrabold animate-pulse text-primary">국내산 마늘로 면역력 업!</p>
+        <p class="text-3xl font-extrabold animate-pulse text-primary">대량의 양파 마늘을 넣어 면역력 업!</p>
       </div>
     </div>
   </article>
