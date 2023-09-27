@@ -23,7 +23,7 @@ export async function POST({ request }: RequestEvent) {
 
   const mailSendResult = await mg.messages.create(process.env.MAILGUN_DOMAIN, {
     from: email,
-    to: ['lurain003@gmail.com'],
+    to: [process.env.MAIL_ADDRESS],
     subject: title,
     text: '',
     html: `
