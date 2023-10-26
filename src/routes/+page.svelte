@@ -33,6 +33,22 @@
     name="description"
     content={`찜앤장은 특별한 양념장으로 독보적인 맛을 자랑합니다.\n수 많은 성공과 실패에서 비롯한 노하우로\n컨설팅해 드립니다.`}
   />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="찜앤장입니다." />
+  <meta
+    property="og:description"
+    content={`찜앤장은 특별한 양념장으로 독보적인 맛을 자랑합니다.\n수 많은 성공과 실패에서 비롯한 노하우로\n컨설팅해 드립니다.`}
+  />
+  <meta property="og:image" content="https://찜앤장.com/_app/immutable/assets/banner.0687dbc8.png" />
+  <meta property="og:url" content="https://xn--ef5b84b66f.com/" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="찜앤장입니다." />
+  <meta
+    name="twitter:description"
+    content={`찜앤장은 특별한 양념장으로 독보적인 맛을 자랑합니다.\n수 많은 성공과 실패에서 비롯한 노하우로\n컨설팅해 드립니다.`}
+  />
+  <meta name="twitter:image" content="https://찜앤장.com/_app/immutable/assets/banner.0687dbc8.png" />
+  <meta name="twitter:domain" content="사이트 명" />
 </svelte:head>
 
 <section class="flex flex-col items-center">
